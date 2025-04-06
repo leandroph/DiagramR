@@ -43,7 +43,7 @@ graph <- grViz(
       fontname = \"Helvetica Neue\"
     ]
 
-    Residuos [label = \"♻️ Efluentes e Resíduos\", fillcolor = \"#D6EAF8:#85C1E9\", fontcolor = \"#1B2631\", fontsize = 18, penwidth = 4, color = \"#2874A6\"]
+    Residuos [label = \"♻️ Resíduos Sólidos Recicláveis\", fillcolor = \"#D6EAF8:#85C1E9\", fontcolor = \"#1B2631\", fontsize = 18, penwidth = 4, color = \"#2874A6\"]
     Efluentes [label = \"🚽 Efluentes, Sanitários,\nLimpeza do local, lavagem de EPI’s\"]
     Caixa [label = \"🧱 Caixa de gordura\"]
     Recolhimento [label = \"🧴 Recolhimento dos efluentes\nprovenientes dos resíduos\"]
