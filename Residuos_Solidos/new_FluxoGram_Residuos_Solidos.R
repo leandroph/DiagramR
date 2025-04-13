@@ -9,11 +9,11 @@ digraph G {
     shape = rect,
     style = \"rounded,filled\",
     fontname = \"Arial\",
-    fontsize = 12,
+    fontsize = 14,
     margin = \"0.2,0.15\",
-    width = 3.5,
-    height = 1.5,
-    fixedsize = true,
+    width = 2.5,
+    height = 1,
+    fixedsize = false,
     gradientangle = 90
   ]
 
@@ -22,7 +22,7 @@ digraph G {
   { rank = same; Volume Origem Tipologia Gerenciamento }
   { rank = same; Estrutura Periodicidade Polimericos Coleta }
 
-  // Estilização dos nós
+  // Nós com rótulos e preenchimento
   Residuos [label = <<b>🗑️<br/>Resíduos Sólidos</b>>, 
             fillcolor = \"#5499C7:#85C1E9\", fontcolor = \"#1B2631\", 
             fontsize = 16, penwidth = 4, color = \"#2874A6\"]
@@ -30,7 +30,7 @@ digraph G {
   Volume [label = <<b>📦<br/>Volume de resíduos<br/>(Recebimento - Tempo de <br/>Armazenamento)</b>>, 
           fillcolor = \"#A9CCE3:#D6EAF8\"]
 
-  Origem [label = <<b>📍<br/>Origem<br/>(Somente do Município de Cerro Largo)</b>>, 
+  Origem [label = <<b>📍<br/>Origem<br/>(Somente do Município<br/> de Cerro Largo)</b>>, 
           fillcolor = \"#A9CCE3:#D6EAF8\"]
 
   Tipologia [label = <<b>📚<br/>Tipologia e classificação</b>>, 
@@ -50,8 +50,8 @@ digraph G {
 
   Coleta [label = <<b>🚛<br/>Coleta, Separação,<br/>Transporte e Armazenamento</b>>, 
           fillcolor = \"#A9CCE3:#D6EAF8\"]
-
-  // Conectando os nós
+  
+  // Ligações entre nós
   Residuos -> Volume
   Residuos -> Origem
   Residuos -> Tipologia
@@ -61,3 +61,4 @@ digraph G {
   Tipologia -> Polimericos
   Gerenciamento -> Coleta
 }
+")
